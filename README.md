@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
+# 📈 TSLA Stock Price Prediction Dashboard
 
-## Project info
+A modern, clean, and visually engaging dashboard for stock prediction using machine learning models. Designed for data scientists and retail traders who want a quick upload → predict → insight flow.
 
-**URL**: https://lovable.dev/projects/3b76166b-9b89-4839-a3c7-cd79c76ebebc
+## 🚀 Features
 
-## How can I edit this code?
+### Frontend (React/TypeScript)
+- **Modern Dashboard UI**: Clean financial theme with blue/green accents
+- **Collapsible Sidebar**: Data source selection, model configuration, hyperparameters
+- **Responsive Grid Layout**: Metric cards, interactive charts, data preview
+- **Real-time Metrics**: MSE, RMSE, R² score with color-coded status indicators
+- **Interactive Charts**: Price trends with moving averages, volume analysis, market sentiment
+- **Trading Recommendations**: AI-powered buy/hold/sell signals with confidence indicators
 
-There are several ways of editing your application.
+### Backend (Streamlit/Python)
+- **Multiple Data Sources**: Local CSV upload, Yahoo Finance API integration
+- **Feature Engineering**: Moving averages, technical indicators, lag features
+- **ML Models**: Linear Regression, Decision Tree, Random Forest with hyperparameter tuning
+- **Model Performance**: Comprehensive metrics and visualizations
+- **Export Capabilities**: Downloadable predictions and datasets
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3b76166b-9b89-4839-a3c7-cd79c76ebebc) and start prompting.
+**Frontend:**
+- React 18 + TypeScript
+- Tailwind CSS with custom design system
+- Shadcn/ui components
+- Lucide React icons
+- Vite build system
 
-Changes made via Lovable will be committed automatically to this repo.
+**Backend:**
+- Streamlit for web interface
+- Pandas for data processing
+- Scikit-learn for ML models
+- yfinance for real-time data
+- Plotly for interactive charts
 
-**Use your preferred IDE**
+## 🏃‍♂️ Quick Start
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Frontend Development
+```bash
+# Install dependencies
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+### Python Backend
+```bash
+# Install Python dependencies
+pip install -r src/python-backend/requirements.txt
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Run Streamlit app
+streamlit run src/python-backend/streamlit_app.py
+```
 
-**Use GitHub Codespaces**
+## 📊 Usage Flow
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Data Selection**: Choose between local CSV, file upload, or Yahoo Finance API
+2. **Model Configuration**: Select ML algorithm and tune hyperparameters
+3. **Feature Engineering**: Automatic technical indicators and lag features
+4. **Training & Prediction**: One-click model training with progress indicators
+5. **Analysis**: Interactive charts, performance metrics, and trading signals
+6. **Export**: Download predictions and datasets for further analysis
 
-## What technologies are used for this project?
+## 🎨 Design System
 
-This project is built with:
+The dashboard uses a professional financial design system with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Colors**: Primary blue (#3b82f6), Success green (#10b981), Warning amber (#f59e0b)
+- **Gradients**: Subtle header and card gradients for depth
+- **Typography**: Modern sans-serif with proper hierarchy
+- **Shadows**: Soft shadows with hover effects
+- **Responsive**: Mobile-first grid system
 
-## How can I deploy this project?
+## 📱 Components
 
-Simply open [Lovable](https://lovable.dev/projects/3b76166b-9b89-4839-a3c7-cd79c76ebebc) and click on Share -> Publish.
+### Core Components
+- `DashboardHeader`: App branding with gradient background
+- `DashboardSidebar`: Model configuration and data source selection
+- `MetricCard`: Financial metrics with trend indicators
+- `PriceChart`: Interactive stock price visualization
+- `TradingRecommendation`: AI-powered trading signals
 
-## Can I connect a custom domain to my Lovable project?
+### React Demo
+A minimal React component (`src/components/react-demo/TslaMetricCard.jsx`) is included for design handoff and integration reference.
 
-Yes, you can!
+## 🔧 Configuration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Environment Variables
+No environment variables required for basic functionality. Yahoo Finance data is fetched directly through the yfinance library.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Customization
+- Update design tokens in `src/index.css`
+- Modify component variants in individual component files
+- Extend ML models in the Streamlit backend
+
+## 📈 ML Models
+
+**Supported Algorithms:**
+- **Linear Regression**: Fast baseline model
+- **Decision Tree**: Interpretable non-linear model  
+- **Random Forest**: Ensemble method with hyperparameter tuning
+
+**Feature Engineering:**
+- Moving averages (5, 20, 50 day)
+- Price change percentages
+- High-low volatility indicators
+- Volume-based features
+- Lag features (1, 2, 3, 5 days)
+
+**Performance Metrics:**
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score (coefficient of determination)
+
+## 🏢 About
+
+Developed by **Brainybeam Info-Tech PVT LTD**
+
+This dashboard provides a professional-grade interface for stock prediction analysis, combining modern web technologies with robust machine learning capabilities.
+
+## 📄 License
+
+This project is provided as a reference implementation for stock prediction dashboards. Modify and adapt according to your specific requirements.
+
+---
+
+**Note**: This dashboard is for educational and research purposes. Always consult with financial advisors before making investment decisions.

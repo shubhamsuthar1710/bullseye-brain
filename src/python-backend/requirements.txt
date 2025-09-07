@@ -23,3 +23,5 @@ seaborn>=0.11.0
 
 # Optional: For more advanced ML models
 xgboost>=1.7.0
+# PS C:\Users\shubham\Documents\GitHub\bullseye-brain> cd "C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend"
+# PS C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend> py -m streamlit run streamlit_app.py

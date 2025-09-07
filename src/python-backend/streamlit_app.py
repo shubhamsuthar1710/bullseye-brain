@@ -69,13 +69,13 @@ st.markdown("""
 # Header
 st.markdown("""
 <div style='background: linear-gradient(135deg, #1e40af 0%, #059669 100%); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;'>
-    <h1 style='color: white; margin: 0; font-size: 2.5rem;'>📈 TSLA Stock Price Prediction Dashboard</h1>
+    <h1 style='color: white; margin: 0; font-size: 2.5rem;'>TSLA Stock Price Prediction Dashboard</h1>
     <p style='color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 1.1rem;'>Advanced ML models for data scientists & traders</p>
 </div>
 """, unsafe_allow_html=True)
 
 # Sidebar Configuration
-st.sidebar.markdown("## 🔧 Configuration")
+st.sidebar.markdown("## Configuration")
 
 # Data Source Selection
 data_source = st.sidebar.radio(

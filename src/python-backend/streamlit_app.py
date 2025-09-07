@@ -447,7 +447,7 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #6b7280; padding: 2rem;'>
     <p>© 2024 <strong>Brainybeam Info-Tech PVT LTD</strong> | Advanced ML-powered stock prediction platform</p>
-    <p>Built with ❤️ using Streamlit, scikit-learn, and yfinance</p>
+    
 </div>
 """, unsafe_allow_html=True)
 

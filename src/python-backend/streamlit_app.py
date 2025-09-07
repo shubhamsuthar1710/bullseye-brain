@@ -15,6 +15,8 @@ This Streamlit app provides a complete stock prediction pipeline with:
 - Interactive visualizations and model performance metrics
 - Downloadable predictions and trading recommendations
 """
+# PS C:\Users\shubham\Documents\GitHub\bullseye-brain> cd "C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend"
+# PS C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend> py -m streamlit run streamlit_app.py
 
 import streamlit as st
 import pandas as pd
@@ -34,7 +36,7 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="📈 TSLA Stock Price Prediction Dashboard",
+    page_title="TSLA Stock Price Prediction Dashboard",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -43,26 +45,33 @@ st.set_page_config(
 # Custom CSS for financial styling
 st.markdown("""
 <style>
-    .main {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    }
-    .metric-card {
-        background: white;
-        padding: 1rem;
-        border-radius: 12px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        border: 1px solid #e2e8f0;
-    }
-    .sidebar .sidebar-content {
-        background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
-    }
-    .recommendation-box {
-        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-        padding: 1.5rem;
-        border-radius: 12px;
-        border: 2px solid #3b82f6;
-        margin: 1rem 0;
-    }
+  .main {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* dark navy tones */
+}
+
+.metric-card {
+    background: #1e293b; /* navy background */
+    color: #f8fafc; /* light text for contrast */
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    border: 1px solid #334155;
+}
+
+.sidebar .sidebar-content {
+    background: linear-gradient(135deg, #000000 0%, #1e40af 100%); /* black to deep navy */
+    color: #f8fafc;
+}
+
+.recommendation-box {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #2563eb; /* bright blue accent */
+    margin: 1rem 0;
+    color: #f8fafc;
+}
+
 </style>
 """, unsafe_allow_html=True)
 

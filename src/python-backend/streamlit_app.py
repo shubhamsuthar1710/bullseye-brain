@@ -446,25 +446,8 @@ if 'data' in st.session_state:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #6b7280; padding: 2rem;'>
-    <p>© 2024 <strong>Brainybeam Info-Tech PVT LTD</strong> | Advanced ML-powered stock prediction platform</p>
+    <p>© 2024 <strong>shubham suthar </strong> | Advanced ML-powered stock prediction platform</p>
     
 </div>
 """, unsafe_allow_html=True)
 
-# Help section in sidebar
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 💡 Quick Help")
-st.sidebar.info("""
-**How to use:**
-1. Select your data source
-2. Choose ML model & parameters  
-3. Click 'Run Prediction'
-4. Analyze results & download
-
-**Features:**
-- Real-time TSLA data from Yahoo Finance
-- Multiple ML models comparison
-- Interactive charts with zoom & tooltips
-- Downloadable predictions
-- Trading recommendations with confidence scores
-""")

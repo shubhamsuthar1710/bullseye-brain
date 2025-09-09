@@ -6,15 +6,8 @@ pip install streamlit pandas scikit-learn yfinance plotly
 
 RUN COMMAND:
 streamlit run streamlit_app.py
-
-DESCRIPTION:
-This Streamlit app provides a complete stock prediction pipeline with:
-- Data loading (CSV upload or Yahoo Finance fetching)
-- Feature engineering (moving averages, technical indicators)
-- Multiple ML models (Linear Regression, Decision Tree, Random Forest)
-- Interactive visualizations and model performance metrics
-- Downloadable predictions and trading recommendations
 """
+
 # PS C:\Users\shubham\Documents\GitHub\bullseye-brain> cd "C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend"
 # PS C:\Users\shubham\Documents\GitHub\bullseye-brain\src\python-backend> py -m streamlit run streamlit_app.py
 
